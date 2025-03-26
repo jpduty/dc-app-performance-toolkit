@@ -4,6 +4,9 @@ from selenium.webdriver.common.by import By
 
 from selenium_ui.jira.pages.pages import Issue
 from selenium_ui.conftest import print_timing
+from selenium_ui.jira.pages.pages import Login, AdminPage
+from util.conf import JIRA_SETTINGS
+
 
 def app_specific_action(webdriver, datasets):
     issue_page = Issue(webdriver, issue_key=datasets['current_session']['issue_key'])
